@@ -18,52 +18,13 @@ describe('components/TodoForm', () => {
     expect(handleSubmitMock).toBeCalledWith('aaa');
   });
 
-  it('correctly not submit value with empty', () => {
+  it('correctly not submit value with invalid value', () => {
     const handleSubmitMock = vi.fn();
     render(<TodoForm handleSubmit={handleSubmitMock} />);
 
     fireEvent.change(screen.getByTestId('todoForm-input'), {
       target: {
         value: '',
-      },
-    });
-    fireEvent.click(screen.getByTestId('todoForm-button'));
-    expect(handleSubmitMock).not.toBeCalled();
-  });
-
-  it('correctly not submit value with space', () => {
-    const handleSubmitMock = vi.fn();
-    render(<TodoForm handleSubmit={handleSubmitMock} />);
-
-    fireEvent.change(screen.getByTestId('todoForm-input'), {
-      target: {
-        value: ' ',
-      },
-    });
-    fireEvent.click(screen.getByTestId('todoForm-button'));
-    expect(handleSubmitMock).not.toBeCalled();
-  });
-
-  it('correctly not submit value with zenkaku space', () => {
-    const handleSubmitMock = vi.fn();
-    render(<TodoForm handleSubmit={handleSubmitMock} />);
-
-    fireEvent.change(screen.getByTestId('todoForm-input'), {
-      target: {
-        value: '　',
-      },
-    });
-    fireEvent.click(screen.getByTestId('todoForm-button'));
-    expect(handleSubmitMock).not.toBeCalled();
-  });
-
-  it('correctly not submit value with tab space', () => {
-    const handleSubmitMock = vi.fn();
-    render(<TodoForm handleSubmit={handleSubmitMock} />);
-
-    fireEvent.change(screen.getByTestId('todoForm-input'), {
-      target: {
-        value: '  ',
       },
     });
     fireEvent.click(screen.getByTestId('todoForm-button'));

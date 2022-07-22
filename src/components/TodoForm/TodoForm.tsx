@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react';
+import { isEmpty } from '../../util/string';
 import { Button } from '../Button';
 import { Input } from '../Input';
 
@@ -9,10 +10,10 @@ type Props = {
 export const TodoForm: React.FC<Props> = ({ handleSubmit }) => {
   const [text, setText] = useState('');
   const EMPTY_PATTERN = /^[\s|  |	]+$/
-  const disabled = useMemo(() => EMPTY_PATTERN.test(text) || !(text.length > 0), [EMPTY_PATTERN, text]);
+  const disabled = useMemo(() => isEmpty(text), [isEmpty, text]);
 
   const onSubmit = () => {
-    if (!EMPTY_PATTERN.test(text) && text.length > 0) {
+    if (!disabled) {
       handleSubmit(text);
       setText('');
     }
