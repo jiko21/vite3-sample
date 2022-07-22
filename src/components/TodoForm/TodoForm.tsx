@@ -8,11 +8,11 @@ type Props = {
 
 export const TodoForm: React.FC<Props> = ({ handleSubmit }) => {
   const [text, setText] = useState('');
-  const disabled = useMemo(() => text.length === 0, [text]);
   const EMPTY_PATTERN = /^[\s|  |	]+$/
+  const disabled = useMemo(() => EMPTY_PATTERN.test(text) || !(text.length > 0), [EMPTY_PATTERN, text]);
 
   const onSubmit = () => {
-    if (!EMPTY_PATTERN.test(text) || text.length > 0) {
+    if (!EMPTY_PATTERN.test(text) && text.length > 0) {
       handleSubmit(text);
       setText('');
     }
