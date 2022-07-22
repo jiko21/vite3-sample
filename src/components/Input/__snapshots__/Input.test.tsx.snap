@@ -1,0 +1,10 @@
+// Vitest Snapshot v1
+
+exports[`components/Input > correctly render 1`] = `
+<div>
+  <input
+    class="css-68qs4z"
+    data-testid="undefined-input"
+  />
+</div>
+`;

@@ -1,0 +1,212 @@
+// Vitest Snapshot v1
+
+exports[`components/Todo > correctly add task 1`] = `
+<div>
+  <div
+    class="css-txwc29"
+  >
+    <h2
+      class="css-l7qira-Todo"
+    >
+      Todo app
+    </h2>
+    <div>
+      <input
+        class="css-68qs4z"
+        data-testid="todoForm-input"
+        type="text"
+        value=""
+      />
+      <button
+        class="css-5shtp7-Button"
+        data-testid="todoForm-button"
+      >
+        ADD
+      </button>
+    </div>
+    <div
+      class="css-1ago99h"
+    >
+      <ul
+        class="css-gflyic"
+      >
+        <li
+          class="css-ux9ziv"
+        >
+          <div
+            class="css-1b7m767-Card"
+          >
+            <div
+              class="css-1vo4ybp"
+            >
+              <span
+                class="css-10rfslh"
+              >
+                test
+              </span>
+              <button
+                class="css-gu30kj-Button"
+                data-testid="todo-remove-0-button"
+              >
+                remove
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`components/Todo > correctly not add task when input is empty 1`] = `
+<div>
+  <div
+    class="css-txwc29"
+  >
+    <h2
+      class="css-l7qira-Todo"
+    >
+      Todo app
+    </h2>
+    <div>
+      <input
+        class="css-68qs4z"
+        data-testid="todoForm-input"
+        type="text"
+        value=""
+      />
+      <button
+        class="css-5shtp7-Button"
+        data-testid="todoForm-button"
+      >
+        ADD
+      </button>
+    </div>
+    <div
+      class="css-1ago99h"
+    >
+      <ul
+        class="css-gflyic"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`components/Todo > correctly remove task 1`] = `
+<div>
+  <div
+    class="css-txwc29"
+  >
+    <h2
+      class="css-l7qira-Todo"
+    >
+      Todo app
+    </h2>
+    <div>
+      <input
+        class="css-68qs4z"
+        data-testid="todoForm-input"
+        type="text"
+        value=""
+      />
+      <button
+        class="css-5shtp7-Button"
+        data-testid="todoForm-button"
+      >
+        ADD
+      </button>
+    </div>
+    <div
+      class="css-1ago99h"
+    >
+      <ul
+        class="css-gflyic"
+      >
+        <li
+          class="css-ux9ziv"
+        >
+          <div
+            class="css-1b7m767-Card"
+          >
+            <div
+              class="css-1vo4ybp"
+            >
+              <span
+                class="css-10rfslh"
+              >
+                test1
+              </span>
+              <button
+                class="css-gu30kj-Button"
+                data-testid="todo-remove-0-button"
+              >
+                remove
+              </button>
+            </div>
+          </div>
+        </li>
+        <li
+          class="css-ux9ziv"
+        >
+          <div
+            class="css-1b7m767-Card"
+          >
+            <div
+              class="css-1vo4ybp"
+            >
+              <span
+                class="css-10rfslh"
+              >
+                test3
+              </span>
+              <button
+                class="css-gu30kj-Button"
+                data-testid="todo-remove-2-button"
+              >
+                remove
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`components/Todo > correctly render 1`] = `
+<div>
+  <div
+    class="css-txwc29"
+  >
+    <h2
+      class="css-l7qira-Todo"
+    >
+      Todo app
+    </h2>
+    <div>
+      <input
+        class="css-68qs4z"
+        data-testid="todoForm-input"
+        type="text"
+        value=""
+      />
+      <button
+        class="css-5shtp7-Button"
+        data-testid="todoForm-button"
+      >
+        ADD
+      </button>
+    </div>
+    <div
+      class="css-1ago99h"
+    >
+      <ul
+        class="css-gflyic"
+      />
+    </div>
+  </div>
+</div>
+`;

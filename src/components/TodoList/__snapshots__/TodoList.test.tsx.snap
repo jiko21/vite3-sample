@@ -1,0 +1,56 @@
+// Vitest Snapshot v1
+
+exports[`components/TodoList > correctly render 1`] = `
+<div>
+  <ul
+    class="css-gflyic"
+  >
+    <li
+      class="css-ux9ziv"
+    >
+      <div
+        class="css-1b7m767-Card"
+      >
+        <div
+          class="css-1vo4ybp"
+        >
+          <span
+            class="css-10rfslh"
+          >
+            aaa
+          </span>
+          <button
+            class="css-gu30kj-Button"
+            data-testid="todoList-remove-1-button"
+          >
+            remove
+          </button>
+        </div>
+      </div>
+    </li>
+    <li
+      class="css-ux9ziv"
+    >
+      <div
+        class="css-1b7m767-Card"
+      >
+        <div
+          class="css-1vo4ybp"
+        >
+          <span
+            class="css-10rfslh"
+          >
+            bbb
+          </span>
+          <button
+            class="css-gu30kj-Button"
+            data-testid="todoList-remove-2-button"
+          >
+            remove
+          </button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

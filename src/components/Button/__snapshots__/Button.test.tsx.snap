@@ -1,0 +1,12 @@
+// Vitest Snapshot v1
+
+exports[`components/Button > correctly render 1`] = `
+<div>
+  <button
+    class="css-t9php5-Button"
+    data-testid="undefined-button"
+  >
+    Test
+  </button>
+</div>
+`;

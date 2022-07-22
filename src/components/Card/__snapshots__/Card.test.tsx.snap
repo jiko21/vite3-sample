@@ -1,0 +1,11 @@
+// Vitest Snapshot v1
+
+exports[`components/Card > correctly render 1`] = `
+<div>
+  <div
+    class="css-1b7m767-Card"
+  >
+    Test
+  </div>
+</div>
+`;
